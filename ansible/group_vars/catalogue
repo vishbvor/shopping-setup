@@ -26,6 +26,6 @@ mysql:
   server: true
 
 catalogue:
-  static_assets: https://github.com/demoappsdevops/shopping-catalogue/archive/1.0.1.tar.gz
-  bin: https://github.com/demoappsdevops/shopping-catalogue/raw/master/bin/catalogue
+  static_assets: https://github.com/udbc/catalogue/archive/1.0.1.tar.gz
+  bin: https://github.com/udbc/catalogue/raw/master/bin/catalogue
   port: 80
