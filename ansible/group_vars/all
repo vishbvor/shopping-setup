@@ -19,4 +19,4 @@ additional:
 
 env:
   variables:
-    - ORGNAME=School of Devops
+    - ORGNAME=AgileDevOpsInc
