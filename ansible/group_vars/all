@@ -19,4 +19,4 @@ additional:
 
 env:
   variables:
-    - ORGNAME=AgileDevOpsInc
+    - ORGNAME=Lagairogo
