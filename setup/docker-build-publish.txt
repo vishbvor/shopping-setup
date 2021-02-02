@@ -1,0 +1,17 @@
+# Build and publish stage for shopping-carts application 
+----------------------------------------------------------
+
+docker.withRegistry('https://index.docker.io/v1/', 'dockerlogin') {
+ def dockerImage = docker.build("lagairogo/shopping-carts:v${env.BUILD_ID}", "./")
+ dockerImage.push()
+ dockerImage.push("latest")
+}
+
+# Build and publish stage for shopping-portal application
+----------------------------------------------------------
+
+docker.withRegistry('https://index.docker.io/v1/', 'dockerlogin') {
+ def dockerImage = docker.build("lagairogo/shopping-portal:v${env.BUILD_ID}", "./")
+ dockerImage.push()
+ dockerImage.push("latest")
+}
